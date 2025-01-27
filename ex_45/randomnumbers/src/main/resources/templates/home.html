@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных чисел</title>
+</head>
+<body>
+<h1>Введите диапазон для генерации чисел</h1>
+<form action="/generate" method="get">
+    <label for="min">Минимум:</label>
+    <input type="number" id="min" name="min" required>
+    <br>
+    <label for="max">Максимум:</label>
+    <input type="number" id="max" name="max" required>
+    <br><br>
+    <button type="submit">Сгенерировать</button>
+</form>
+
+<p th:if="${error}" th:text="${error}" style="color: red;"></p>
+</body>
+</html>

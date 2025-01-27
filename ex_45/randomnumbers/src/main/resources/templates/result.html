@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Результаты</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Результаты генерации</h1>
+<p>Среднее арифметическое: <span th:text="${average}"></span></p>
+<h3>Сгенерированные числа:</h3>
+<ul>
+    <li th:each="number : ${numbers}" th:text="${number}"></li>
+</ul>
+<a href="/">Назад</a>
+</body>
+</html>

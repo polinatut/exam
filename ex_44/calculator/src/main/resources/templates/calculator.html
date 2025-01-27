@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Арифметический калькулятор</h1>
+<form action="/calculate" method="post">
+    <input type="text" name="expression" placeholder="Введите выражение" required>
+    <button type="submit">Вычислить</button>
+</form>
+
+<h2>Результаты вычислений</h2>
+<ul>
+    <li th:each="calculation : ${calculations}">
+        [[${calculation.expression}]] = [[${calculation.result}]]
+    </li>
+</ul>
+
+<div th:if="${calculation}">
+    <h3>Результат: [[${calculation.expression}]] = [[${calculation.result}]]</h3>
+</div>
+</body>
+</html>
