@@ -1,0 +1,4 @@
+2025-01-27 15:12:53.283921+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS [*]1 (NUMBER_1 INT, NUMBER_2 INT, RES DOUBLE)"; ожидалось "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]1 (NUMBER_1 INT, NUMBER_2 INT, RES DOUBLE)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 1 (NUMBER_1 INT, NUMBER_2 INT, RES DOUBLE) [42001-232]
